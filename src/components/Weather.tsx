@@ -13,9 +13,9 @@ const Weather: React.SFC<WeatherProps> = ({ lat, long }) => {
 
   if (isLoading) {
     return (
-      <Row>
+      <Row className="mt-5">
         <Col>
-          <h3>Loading...</h3>
+          <h2 style={{ color: "white" }}>Loading...</h2>
         </Col>
       </Row>
     );
