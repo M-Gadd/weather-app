@@ -1,8 +1,6 @@
 import React from "react";
-import "./App.css";
-
-import { usePosition } from "./hooks/usePosition";
-import Weather from "./components/Weather";
+import { usePosition } from "../hooks/usePosition";
+import Weather from "./Weather";
 
 function App() {
   const { position, error, isLoading } = usePosition();
@@ -12,7 +10,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div style={{ textAlign: "center" }}>
       {!isLoading && position && (
         <Weather lat={position.latitude} long={position.longitude} />
       )}
