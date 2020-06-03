@@ -20,7 +20,7 @@ const DailyWeather: React.SFC<DailyWeatherProps> = ({ weather }) => {
           </h5>
           <h6>
             {" "}
-            <b>Today:</b>
+            <b>Temp:</b>
             {` ${Math.round(weather.temp.day)} `} - <b>Feels Like: </b>{" "}
             {` ${Math.round(weather.feels_like.day)} `}
           </h6>
