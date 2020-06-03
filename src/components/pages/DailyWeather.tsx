@@ -30,7 +30,6 @@ const DailyWeather: React.SFC<DailyWeatherProps> = ({ weather }) => {
             {`${Math.round(weather.temp.min)} `} - <b> Max: </b>{" "}
             {` ${Math.round(weather.temp.max)}`}
           </h6>
-          <h6>{``}</h6>
           <h6>
             {" "}
             <b>Weather: </b>
